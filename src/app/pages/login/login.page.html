@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class='content'>
+  <div class="image">
+    <img class="design" src="assets/design.png" alt="design">
+    <img class="account" src="assets/account.png" alt="account">
+    <br>
+  </div>
+  
+  <section style="height: 40%;">
+    <form [formGroup]="credentialsForm" (ngSubmit)="login()">
+
+    <div style="margin-bottom: 0%; height: max-content; ">
+    
+
+      <ion-label>E-mail</ion-label>
+      <ion-card> 
+        <ion-item>
+          <ion-icon name="at" color="primary" slot="start"></ion-icon>
+          <ion-input type="email" formControlName="email" [(ngModel)]="value" clearInput></ion-input>
+        </ion-item>
+        <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+          <span *ngIf="email.errors?.required">Email is required</span>
+          <span *ngIf="email.errors?.email">Email is invalid</span>
+        </div>
+      </ion-card>
+
+      
+
+      <ion-label>Password</ion-label>
+      <ion-card> 
+        <ion-item>
+          <ion-icon name="key" color="primary" slot="start"></ion-icon>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+          <span *ngIf="password.errors?.required">Password is required</span>
+          <span *ngIf="password.errors?.minlength">Password needs to be 6 characters at least</span>
+        </div>
+      </ion-card>
+    </div>
+
+    
+    <div style="text-align: center; size:max-content; height:10% ; ">
+      <ion-button shape="round" class="sub" type="submit" [disabled]="!credentialsForm.valid" [routerLink]="['/tabs/tab2',value]" routerDirection="forward"  >Login</ion-button>
+    </div>
+
+    
+
+  <br>
+  </form>
+
+  </section>
+
+
+</ion-content>

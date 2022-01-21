@@ -1,0 +1,36 @@
+ion-toolbar{
+    --ion-background-color: radial-gradient(circle ,rgb(53, 195, 238) 5% , #d7e1f3 80% )!important;
+}
+
+h3{
+    padding-left:3vw;
+    font-weight: bold;
+    //color: rgb(44, 178, 196);
+    //color: rgb(13, 11, 109);
+    color: rgb(23, 119, 228);
+}
+
+p{
+    color: rgb(23, 119, 228);
+}
+
+b{
+    color: rgb(13, 11, 109);
+}
+
+ion-card{ 
+    font-size: medium;
+    display: block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background: rgb(255, 255, 255,0.8);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.4 );
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   }
+
+.content{
+--background: url(/assets/corona.gif) no-repeat center/cover;
+}

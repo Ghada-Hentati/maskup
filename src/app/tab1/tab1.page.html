@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title style="text-align: center;">
+      About
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="back" style="background-color: grey;">
+  <div>
+    <img src="../../assets/logo.png" alt="MASKUP" >
+  </div>
+ 
+  <ul>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <li>Summary</li>
+  <p>"Safety control portal" is what we think that we should adapt everywhere nowadays to make a better and healthier supervision in public places.
+    In order to put an end to the problematic, we can make profit from the technological equipment and software development thanks to the artificial intelligence to create a completely independent and automated system as a new detection protocol.</p> 
+    
+  <li>What is the problem we are trying to solve?</li>	
+  <p>Regarding the insufficiency with the safety degree that public places are lacking from, we thought that we should try to enhance it a little bit in order to minimize from the uncontrollable drawbacks of generally giving the security man the responsibility of checking peoples fever degree before passing through the door. Because no one can deny the fact that, he is at a high risk of being infected with the sickness and represents a potential infection danger for all the people that he will encounter.</p>
+    
+  <li>How we plan to solve it?</li> 
+  <p>Our proposal, is to replace the security man with a system that first detect either the coming the person is wearing a mask or not, then if he/she has a fever or not and at the end decide either to give him/her the access or not depending on the results of the two previous tests.</p> 
+
+  </ul>
+
 </ion-content>
+

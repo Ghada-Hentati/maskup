@@ -1,0 +1,83 @@
+<ion-content>
+  <ion-slides pager="true">
+
+    <!-- Slide 0 -->
+    <ion-slide >
+    
+        <body>
+      
+          <section class="section1">
+            <div >
+              <img class="couverture" src="assets/Capture.png" alt="background">
+              <img class="LOGO" src="assets/logo.png" alt="LOGO">
+            </div>
+          </section>
+          <hr>
+          <section class="section2">
+            <div class="relsign"  style="text-align: center !important;">
+              <ion-button (click)="start()" class="sign" shape="round" >Sign in</ion-button>
+            </div>
+            
+            <p class="intro">Our<b> safety control portal</b> is what we think that we should adapt every where nowadays to make a better health supervision in public places. 
+            </p>
+            <br>
+            <ion-button (click)="next()" fill="solid" color="light">Follow the steps</ion-button>
+
+          </section>
+      
+        </body>
+      
+    </ion-slide>
+ 
+    <!-- Slide 1 -->
+    <ion-slide>
+      <ion-text color="dark">
+        <img class="qr" src="assets/qr-code-scan.gif">
+        <h1>Hey there!</h1>
+        <p>Scan your QR code to get started...</p>
+        <ion-button (click)="next()" fill="solid" color="light">Next</ion-button>
+      </ion-text>
+    </ion-slide>
+ 
+    <!-- Slide 2 -->
+    <ion-slide>
+      <ion-text color="dark">
+        <img src="assets/mask.gif">
+        <h1>It's MASKUP!</h1>
+        <p>... Please wear your mask correctly!</p>
+        <ion-button (click)="next()" fill="solid" color="light">Next</ion-button>
+      </ion-text>
+    </ion-slide>
+
+    <!-- Slide 3 -->
+    <ion-slide>
+      <ion-text color="dark">
+        <img src="assets/temp.gif">
+        <h1>It's MASKUP!</h1>
+        <p>... Check your body temreture too!</p>
+        <ion-button (click)="next()" fill="solid" color="light">Next</ion-button>
+      </ion-text>
+    </ion-slide>
+
+    <!-- Slide 4 -->
+    <ion-slide>
+      <ion-text color="dark">
+        <img src="assets/sanitizer.gif">
+        <h1>It's MASKUP!</h1>
+        <p>... Now you can have your hands sanitizer!</p>
+        <ion-button (click)="next()" fill="solid" color="light">Next</ion-button>
+      </ion-text>
+    </ion-slide>
+
+    <!-- Slide 5 -->
+    <ion-slide>
+      <ion-text color="dark">
+        <img src="assets/dist.gif">
+        <h1>Have a good day!</h1>
+        <p>... Make sure to keep your social distancing!</p>
+        <ion-button (click)="start()" fill="solid" color="light">Start</ion-button>
+      </ion-text>
+    </ion-slide>
+ 
+  </ion-slides>
+</ion-content>

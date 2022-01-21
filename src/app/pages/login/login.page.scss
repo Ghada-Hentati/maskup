@@ -1,0 +1,56 @@
+.content{
+    --background: url(/assets/back4.png) no-repeat center/cover;
+}
+
+.account {
+   margin-top: 11vh;
+   margin-left: 34vw;
+   position: absolute;
+   width: 30vw;
+   height: 15h;
+  }
+   
+  .design {
+    margin: 4vh 9vw ;
+    position: absolute; 
+    height: 40vh;
+    width: 80vw;
+  }
+
+.image{
+    position: relative;
+    height: 45%;
+}
+
+ion-label{
+    margin-left:4vw;
+    font-weight: bold;
+    color: darkblue;
+    height: 30%;
+}
+
+
+
+.sub{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Miriam Libre';
+    display: inline-block;
+    --background: linear-gradient( rgb(109, 209, 28), rgb(154, 221, 115));
+    --color-activated: rgb(0,32,96);
+    text-transform: none;
+    font-size: large;
+}
+
+.errors {
+    font-size: small;
+    color: #fff;
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+ion-toolbar{
+    --ion-background-color: radial-gradient(circle ,rgb(53, 195, 238) 5% , #d7e1f3 80% )!important;
+}

@@ -1,17 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title style="text-align: center;">
+      QR scanner
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" >
+  
+  <ion-card color="secondary" style=" margin-top: 25%;">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card style="margin-top: 2vh;">
+    <div *ngIf="passedId" style="text-align: center;">
+      <qrcode [qrdata]="passedId" [level]="'L'" scale="8"  ></qrcode>
+    </div>
+  </ion-card>
+  <h1 style="font-weight: bold; text-align: center;">
+    <ion-icon name="phone-portrait-outline"></ion-icon>
+    Scan me</h1>
+
+  </ion-card>
+
 </ion-content>

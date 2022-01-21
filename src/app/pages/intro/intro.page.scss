@@ -1,0 +1,89 @@
+ion-content {
+  //--ion-background-color: radial-gradient(circle ,rgb(80, 229, 240) 5% , #88edf1a1 80% )!important;
+  --ion-background-color: url(/assets/back4.png) no-repeat center/cover;
+}
+ 
+ion-slides {
+    height: 100%;
+    --bullet-background-active: #fff;
+    --bullet-background: #000;
+}
+img{
+    height: 350px;
+    width: 200px;
+}
+
+.qr{
+    border-radius: 8px;
+    width: 170px;
+}
+
+
+.section1{
+  height: 60%;
+  margin: 0;
+  padding-right: 40vw;
+  position: relative;
+}
+
+.section2{
+  height: 40%;
+  margin: 0;
+  position: relative;
+}
+
+body{
+  background-color:whitesmoke;
+  margin: 0;
+  font-family: 'Poppins';
+  font-size: .7em;
+}
+hr{
+  border-top: 3px solid rgb(109, 209, 28);
+  margin-top: 0;
+}
+
+.relsign{
+  text-align:center;
+  margin-top:-0.8vh ;
+  position: relative;
+  height: 5vh;
+}
+
+.sign{
+  margin-top: -4vh;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Miriam Libre';
+  display: inline-block;
+  --background: linear-gradient( rgb(109, 209, 28), rgb(154, 221, 115));
+  --color-activated: rgb(0,32,96);
+  text-transform: none;
+  font-size: large;
+  
+}
+
+.intro{
+  text-align: center;
+  color: #595959;
+  text-transform: none;
+  line-height: 1.3em;
+  font-size: 2.8vh;
+  height: 12vh ;
+}
+.couverture{
+  width: 100vw;
+  height: 60vh;
+  position:absolute;
+}
+.LOGO{
+  position :relative;
+  margin: 20vh 25vw;
+  width : 60vw;
+  height: 32vh;
+  animation: rotation 3s infinite;
+}
+@keyframes rotation {
+	0%  {-webkit-transform: rotate(0deg);}
+  50% {-webkit-transform: rotate(10deg);}
+}
