@@ -1,0 +1,7 @@
+{
+  "name": "MASKUP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
